@@ -30,6 +30,7 @@ const Sidebar = ({ user }: SiderbarProps ) => {
                 <h1 className="sidebar-logo">Horizon</h1>
             </Link>
             {sidebarLinks.map((item) => {
+                // CHECK (IF NEED TO USE BACKTICK)
                 const isActive = pathname === item.route || pathname.startsWith('${item.route}/');
                 return (
                     <Link 
