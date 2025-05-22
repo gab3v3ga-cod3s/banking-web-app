@@ -296,7 +296,7 @@
   }
 
   .form-link {
-    @apply text-14 cursor-pointer color-blue font-medium text-bankGradient;
+    @apply text-14 cursor-pointer font-medium text-bankGradient;
   }
 
   /* Payment Transfer */
@@ -357,10 +357,6 @@
 
   .footer_image {
     @apply relative size-5 max-xl:w-full max-xl:flex max-xl:justify-center max-xl:items-center;
-  }
-
-  .footer_image-mobile {
-    @apply relative size-5;
   }
 
   /* Sidebar */
