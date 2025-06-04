@@ -44,7 +44,10 @@ const CustomInput = ({ control, name, label, placeholder }: CustomInput) => {
                         <Input
                             placeholder={placeholder}
                             className="input-class"
+                            type={name === 'password' ? 'password' : 'text'}
                             {...field}
+                            // consider removing if doesn't end up mattering
+                            value={field.value ?? ''}
                         />
                     </FormControl>
                     <FormMessage className="form-message mt-2" />
